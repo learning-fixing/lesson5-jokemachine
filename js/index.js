@@ -27,7 +27,8 @@ const programmingJokes = [
 // random jokes
 function randomJokes() {
     const jokesList = []
-    for (let i = 0; i < 2; i++)     {
+    // for (let i = 0; i < 2; i++)  
+        while (jokesList.length <2)   {
         let random = Math.floor(Math.random() * programmingJokes.length) 
         if (!jokesList.includes(programmingJokes[random])) {
             jokesList.push(programmingJokes[random])
